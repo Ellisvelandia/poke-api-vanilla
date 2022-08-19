@@ -9,8 +9,8 @@ const pokeWeight = document.querySelector(".poke-weight");
 const pokeHeight = document.querySelector(".poke-height");
 
 fetch("https://pokeapi.co/api/v2/pokemon/1")
-  .then(res => res.json())
-  .then(data => {
+  .then((res => res.json())
+  .then((data) => {
     console.log(data);
 
     mainScreen.classList.remove("hide");
@@ -22,6 +22,7 @@ fetch("https://pokeapi.co/api/v2/pokemon/1")
     const dataTypes = data["types"];
     const dataFirstType = dataTypes[0];
     const dataSecondType = dataTypes[1];
+
     pokeTypeOne.textContent = dataFirstType["type"]["name"];
     if (dataSecondType) {
       pokeTypeOne.classList.remove("hide");
