@@ -1,0 +1,1 @@
+fetch resultFromFetch('https://pokeapi.co/api/v2/pokemon/1')
